@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>parallex scrolling website | javascript</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href="#" class="logo">logo</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </header>
+    <section>
+        
+        <img src="source/313131.png" id="stars">
+        <a href="#sec" id="btn">Explore</a>
+        <img src="source/mmm.png" id="moon">
+        <h2 id="text">Moon     Light</h2>
+        
+        <img src="source/newmontainba01.png" id="midm1">
+        <img src="source/newmontainba.png" id="midm2">
+        <img src="source/newmontainba.png" id="bb">
+        <img src="source/newmontainba.png" id="bb0">
+        <img src="source/newmontainba01.png" id="bb2">
+        <img src="source/newmontainba01.png" id="bb22">
+        <img src="source/0.0.6.png" id="b">
+    </section>
+<div class="sec" id="sec">
+ <h2>What is CSCC Club ?</h2>
+        <p>Le Computer Science Community Club est le premier club scientifique de l'Université Saad Dahleb de BLIDA .
+        CSCC est dirigé par une équipe de geeks avec une motivation à construire une haute qualité de développeurs 
+        dans la communauté éstudiantine, nous investissons notre temps à créer des projets et des idées qui rendent 
+        l'éxperience universitaire unique et bénificiare .<br><br> Nous sommes ici parce que nous aimons ce que nous faisons. 
+        Notre passion consiste à aider les étudiants qui s'intéressent à l'informatique et qui souhaitent acquérir plus
+        de compétences en organisant des activités à but non lucratif (des évenments , des formations , des projets , des initiatives) ,
+        Notre mission est d'entrer dans la prochaine vague de la nouvelle Algérie numérique avancée.</p>
+        <p>Le Computer Science Community Club est le premier club scientifique de l'Université Saad Dahleb de BLIDA .
+        CSCC est dirigé par une équipe de geeks avec une motivation à construire une haute qualité de développeurs 
+        dans la communauté éstudiantine, nous investissons notre temps à créer des projets et des idées qui rendent 
+        l'éxperience universitaire unique et bénificiare .<br><br> Nous sommes ici parce que nous aimons ce que nous faisons. 
+        Notre passion consiste à aider les étudiants qui s'intéressent à l'informatique et qui souhaitent acquérir plus
+        de compétences en organisant des activités à but non lucratif (des évenments , des formations , des projets , des initiatives) ,
+        Notre mission est d'entrer dans la prochaine vague de la nouvelle Algérie numérique avancée.</p>
+        <p>Le Computer Science Community Club est le premier club scientifique de l'Université Saad Dahleb de BLIDA .
+        CSCC est dirigé par une équipe de geeks avec une motivation à construire une haute qualité de développeurs 
+        dans la communauté éstudiantine, nous investissons notre temps à créer des projets et des idées qui rendent 
+        l'éxperience universitaire unique et bénificiare .<br><br> Nous sommes ici parce que nous aimons ce que nous faisons. 
+        Notre passion consiste à aider les étudiants qui s'intéressent à l'informatique et qui souhaitent acquérir plus
+        de compétences en organisant des activités à but non lucratif (des évenments , des formations , des projets , des initiatives) ,
+        Notre mission est d'entrer dans la prochaine vague de la nouvelle Algérie numérique avancée.</p>
+        <p>Le Computer Science Community Club est le premier club scientifique de l'Université Saad Dahleb de BLIDA .
+        CSCC est dirigé par une équipe de geeks avec une motivation à construire une haute qualité de développeurs 
+        dans la communauté éstudiantine, nous investissons notre temps à créer des projets et des idées qui rendent 
+        l'éxperience universitaire unique et bénificiare .<br><br> Nous sommes ici parce que nous aimons ce que nous faisons. 
+        Notre passion consiste à aider les étudiants qui s'intéressent à l'informatique et qui souhaitent acquérir plus
+        de compétences en organisant des activités à but non lucratif (des évenments , des formations , des projets , des initiatives) ,
+        Notre mission est d'entrer dans la prochaine vague de la nouvelle Algérie numérique avancée.</p>
+        <p>Le Computer Science Community Club est le premier club scientifique de l'Université Saad Dahleb de BLIDA .
+            CSCC est dirigé par une équipe de geeks avec une motivation à construire une haute qualité de développeurs 
+            dans la communauté éstudiantine, nous investissons notre temps à créer des projets et des idées qui rendent 
+            l'éxperience universitaire unique et bénificiare .<br><br> Nous sommes ici parce que nous aimons ce que nous faisons. 
+            Notre passion consiste à aider les étudiants qui s'intéressent à l'informatique et qui souhaitent acquérir plus
+            de compétences en organisant des activités à but non lucratif (des évenments , des formations , des projets , des initiatives) ,
+            Notre mission est d'entrer dans la prochaine vague de la nouvelle Algérie numérique avancée.</p>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let midm1 = document.getElementById('midm1');
+        let midm2 = document.getElementById('midm2');
+        let bb = document.getElementById('bb');
+        let bb0 = document.getElementById('bb0');
+        let bb2 = document.getElementById('bb2');
+        let bb22 = document.getElementById('bb22');
+    let text = document.getElementById('text');
+    let btn = document.getElementById('btn'); let header = document.getElementById('header');
+    window.addEventListener('scroll',function(){
+        let value = window.scrollY;
+        moon.style.top = value * 0.5 + 'px';
+        /*stars.style.top = value * 0.5 + 'px';*/
+        midm1.style.top = value * 0.5 + 'px';
+        midm2.style.top = value * 0.5 + 'px';
+        bb.style.top = value * 0.5 + 'px'; 
+        bb0.style.top = value * 0.5 + 'px';
+        bb2.style.top = value * 0.5 + 'px';
+        bb22.style.top = value * 0.5 + 'px';
+        text.style.marginLeft = value * 0.5 + 'px'; 
+        header.style.marginTop = value * 0.75 + 'px';
+    })
+    </script>
+</body>
+
+</html>
